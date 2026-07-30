@@ -1,21 +1,51 @@
 aid: koinex
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/koinex.png
 name: Koinex
-description: 'Koinex is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Koinex was an Indian digital-asset exchange launched in 2017, describing itself as India''s
+  first and largest cryptocurrency exchange with more than one million users. It offered spot trading
+  across multiple crypto assets with INR pairs before regulatory uncertainty around Indian banking access
+  forced it to shut down all services in June 2019, asking users to withdraw their holdings by July 15,
+  2019. The company is DEFUNCT: koinex.in now serves only a single static wind-down notice directing
+  former users to claim any crypto assets left on the platform through CoinDCX, with which Koinex
+  partnered for the transition. There is no live product, developer portal, documentation, or API
+  surface; the domain''s TLS certificate expired in March 2025 and every path other than the notice
+  returns 403. Retained in the API Evangelist network as a historical record of a shut-down crypto
+  exchange and as a Pantera Capital portfolio lead.'
 url: https://raw.githubusercontent.com/api-evangelist/koinex/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - pantera-capital
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-shutdown-date: '2019-06'
+x-shutdown-reason: Regulatory uncertainty over Indian banking access for crypto exchanges.
+x-successor: coindcx
+x-successor-url: https://coindcx.com/blog/announcements/coindcx-koinex-a-seamless-transition/
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto
+- Cryptocurrency Exchange
+- Digital Assets
+- Trading
+- India
+- Fintech
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +53,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/koinex-domain-security.yml
 - type: Website
   url: https://koinex.in/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
