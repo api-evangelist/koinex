@@ -34,7 +34,7 @@ x-shutdown-date: '2019-06'
 x-shutdown-reason: Regulatory uncertainty over Indian banking access for crypto exchanges.
 x-successor: coindcx
 x-successor-url: https://coindcx.com/blog/announcements/coindcx-koinex-a-seamless-transition/
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
